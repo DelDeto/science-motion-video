@@ -1,0 +1,14 @@
+{
+  "name": "science-motion-video",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "compositions": "remotion compositions src/index.ts",
+    "render": "remotion render src/index.ts ProbabilityV3 out/probability-v3.mp4 --codec h264 --crf 18",
+    "still": "remotion still src/index.ts ProbabilityV3 out/poster.png --frame 100"
+  },
+  "dependencies": {"@remotion/cli": "4.0.539", "remotion": "4.0.539", "react": "18.3.1", "react-dom": "18.3.1"},
+  "devDependencies": {"@types/react": "18.3.28", "@types/react-dom": "18.3.7", "typescript": "5.9.3"},
+  "engines": {"node": ">=20"}
+}
